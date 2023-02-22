@@ -10,6 +10,7 @@ html{
 
 body{
     padding: 0.5rem;
+    height: 5vh;
 }
 
 .header{
@@ -112,34 +113,43 @@ body{
 #photo_gallery{
     display: flex;
     height: 50vh;
-    width: 100%;
+    width: max-content;
 
-    padding: 1rem;
+    /* padding: 1rem; */
     
     background-color: aqua;
     border: 2px solid black;
 }
 
-/* #photo_gallery>marquee{
+#photo_gallery>div{
     height: 100%;
-    padding: 1rem;
-
-} */
-
-#photo_gallery>img{
-    /* display: flex;   */
-    height: 100%;
-    width: min-content;
+    width: 25vw;
     
+    border: 2px solid rgb(255, 0, 0);
+
+    padding: 0.5rem;
+
+    align-items: center;
+    justify-content: center;
 }
 
-#photo_gallery>marquee>div{
+#photo_gallery>div>img{
+    display: block;  
     height: 100%;
-    width: min-content;
-    border: 2px solid black;
+
+    margin: auto;
 }
 
-#photo_gallery>div>marquee>img{
-    max-height: 100%;
-    width: auto;
+
+#links>a{
+    /* float: right; */
+    /* width: 5rem; */
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+
+    background-color: blue;
+
+    /* padding: 1rem; */
+    /* margin: 10rem; */
 }
