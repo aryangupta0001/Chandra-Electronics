@@ -10,7 +10,7 @@ html{
 
 body{
     padding: 0.5rem;
-    height: 5vh;
+    height: 500vh;
 }
 
 .header{
@@ -110,46 +110,84 @@ body{
     height: 1rem;
 }
 
-#photo_gallery{
+#main{
     display: flex;
-    height: 50vh;
-    width: max-content;
+}
 
-    /* padding: 1rem; */
-    
-    background-color: aqua;
+#laside{
+    height: 500vh;
+    width: 15vw;
+
+    background-color: yellow;
     border: 2px solid black;
 }
 
-#photo_gallery>div{
-    height: 100%;
-    width: 25vw;
+#centre{
+    height: 500vh;
+    width: 70vw;
+
+    padding: 0rem 0.5rem;
+}
+
+#raside{
+    height: 500vh;
+    width: 15vw;
     
-    border: 2px solid rgb(255, 0, 0);
-
-    padding: 0.5rem;
-
-    align-items: center;
-    justify-content: center;
-}
-
-#photo_gallery>div>img{
-    display: block;  
-    height: 100%;
-
-    margin: auto;
+    background-color: yellow;
+    border: 2px solid black;
 }
 
 
-#links>a{
-    /* float: right; */
-    /* width: 5rem; */
+#gallery{
+    display: flex;
+
+    width: 100%;
+    height: 50vh;
+
+    border: 2px solid red;
+    padding: 1rem;
+    
+    background-color: aqua;
+}
+
+#gallery>marquee>div{
+    display: inline-block;
+
+    height: 45vh;
+    width: 20vw;
+
+    /* border: 2px solid gray; */
+    /* background-color: antiquewhite; */
+    
+    /* margin: 1rem; */
+}
+
+#gallery>marquee>div>img{
+    display: block;
+
+    border: 2px solid black;
+
+    max-height: 100%;
+    max-width: 100%;
+
+    margin: auto;   
+}
+
+.links{
+    display: flex;
+
+    height: 5vh;
+
+    border: 2px solid black;
+    background-color: beige;
+
+    justify-content: space-evenly;
+
+}
+
+.links>a{
     text-decoration: none;
     font-size: 2rem;
-    color: rgb(255, 255, 255);
-
-    background-color: blue;
-
-    /* padding: 1rem; */
-    /* margin: 10rem; */
+    
+    color: black;
 }
